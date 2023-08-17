@@ -1,0 +1,87 @@
+h1 {
+    margin-top:5%;
+    text-decoration: underline;
+}
+
+table, th, td {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1, h2, p, .link {
+    text-align: center;
+}
+
+.entry-table {
+    border: 1px solid;
+    border-collapse: collapse;
+    width:50em;
+    table-layout:fixed;
+}
+
+.table-header {
+    border-bottom: 1px dashed grey;
+}
+
+.table-header th {
+    border-left:1px solid;
+}
+
+.entry table tr {
+    padding: 10px;
+}
+
+.model-entries {
+    border-bottom: 1px dashed grey
+}
+
+.model-entries td {
+    font-size: 20px;
+    border-left:1px solid;
+}
+
+.table-header th, .model-entries td {
+    width:100%;
+    padding: 10px;
+}
+
+.label {
+    flex: 0 0 100px;
+    padding-right:10px;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+}
+
+.entry {
+    width:50%;
+    max-width:250px;
+    margin: 0 auto;
+    padding:20px;
+    box-shadow: 0 0 10px black;
+    background-color: #efefef;
+    border: 1px solid;
+    border-radius: 25px;
+}
+
+.label {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.value {
+    width:100%;
+    margin-top:5px;
+    padding: 5px;
+}
+
+.link {
+    margin-top:10px;
+    font-size:20px;
+}
+
+.card {
+    margin-top:7%;
+}

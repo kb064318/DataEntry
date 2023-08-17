@@ -1,0 +1,56 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:100vh;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.entry {
+    width:90%;
+    max-width:500px;
+    margin: 0 auto;
+    padding:20px;
+    box-shadow: 0 0 10px black;
+    background-color: #efefef;
+    border-radius: 25px;
+}
+
+.label {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.value {
+    width:100%;
+    margin-top:5px;
+    padding: 5px;
+}
+
+.submit {
+    background-color:lightblue;
+    display:flex;
+    justify-content: center;
+    width:50vh;
+    height:35px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width:100%;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Data Entry</title>
+    <link rel="stylesheet" th:href="@{/entry.css}">
+</head>
+<body>
+<div class="card">
+    <h1>Data Entry</h1>
+    <!-- Gathers dataModel information from user -->
+    <form action="#" th:action="@{/confirmation}" th:object="${dataModel}" method="post">
+        <div class="entry">
+            <div class="center">
+                <i>An asterisk(*) denotes a required field.</i>
+            </div>
+            <p class="label">*Name:    <input class="value" type="text" th:field="*{name}" placeholder="Enter name..." required/>
+            <p class="label">*Age:     <input class="value" type="number" min="0" max="200" th:field="*{age}" placeholder="Enter age..." required></p>
+            <p class="label">Title:    <input class="value" type="text" th:field="*{title}" placeholder="Enter title..."/></p>
+            <p class="label">Hometown: <input class="value" type="text" th:field="*{hometown}" placeholder="Enter hometown..."/></p>
+            <div class="center">
+                <p><input class="submit" type="submit" value="Submit" /></p>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

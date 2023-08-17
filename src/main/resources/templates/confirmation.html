@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation Screen</title>
+    <link rel="stylesheet" th:href="@{/confirmation.css}">
+</head>
+<body>
+<h1>Your entry has been successfully submitted.</h1>
+<div class="card">
+    <h2>Details</h2>
+    <!-- Displays the last dataModel entered -->
+    <div class="entry">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td th:text="${topModel.name}"/>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td th:text="${topModel.age}" style="text-align:right"/>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td th:text="${topModel.title}"/>
+            </tr>
+            <tr>
+                <td>Hometown:</td>
+                <td th:text="${topModel.hometown}"/>
+            </tr>
+        </table>
+    </div>
+    <div class="link">
+        <a href="/entry">Click here to add another entry</a>
+    </div>
+</div>
+
+<h1 style="margin-top:7%">Previous Entries</h1>
+<table class="entry-table">
+    <thead>
+        <tr class="table-header">
+            <th>Name</th>
+            <th>Age</th>
+            <th>Title</th>
+            <th>Hometown</th>
+        </tr>
+    </thead>
+
+    <!-- Displays all dataModels in a table -->
+    <tr class="model-entries" th:each="dataModel: ${dataModels}">
+        <td th:text="${dataModel.name}"/>
+        <td th:text="${dataModel.age}" style="text-align: right"/>
+        <td th:text="${dataModel.title}"/>
+        <td th:text="${dataModel.hometown}"/>
+    </tr>
+</table>
+</body>
+</html>
